@@ -26,6 +26,11 @@
                         @method('DELETE')
                         <button type="submit">Eliminar Producto</button>
                     </form>
+                    <form action="{{ route('productes.buscar') }}" method="GET">
+                        @csrf
+                        <input type="text" name="nom">
+                        <button type="submit">Buscar Producto</button>
+                    </form>
                 </li>
             @endif
         @endforeach

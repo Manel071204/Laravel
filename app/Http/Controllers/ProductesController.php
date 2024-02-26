@@ -105,4 +105,14 @@ class ProductesController extends Controller
         // Redirigir a alguna vista o ruta después de eliminar
         return redirect()->route('productes.index')->with('success', '¡El producto ha sido eliminado exitosamente!');
     }
+
+    public function buscar(Request $request)
+    {
+        $query = $request->input('nom');
+
+        $resultados = Producte::where('nom', 'LIKE', "$query")
+                                ->get();
+
+        return view('resultados', compact('resultados'));
+    }
 }

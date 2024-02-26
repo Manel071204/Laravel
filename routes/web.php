@@ -26,3 +26,4 @@ Route::put('/productes/{id}', [ProductesController::class, 'update'])->name('pro
 Route::delete('/productes/{id}', [ProductesController::class, 'destroy'])->name('productes.destroy');
 Route::post('/productes/{id}/increment', [ProductesController::class, 'incrementStock'])->name('productes.incrementStock');
 Route::post('/productes/{id}/decrement', [ProductesController::class, 'decrementStock'])->name('productes.decrementStock');
+Route::get('/productes/buscar', [ProductesController::class, 'buscar'])->name('productes.buscar');

@@ -8,5 +8,8 @@
     <h1>Detalls del Producte</h1>
     <p><strong>Nom:</strong> {{ $producte->nom }}</p>
     <p><strong>Preu:</strong> {{ $producte->preu }}</p>
+    <p><strong>Descripcio:</strong> {{ $producte->descripcio }}</p>
+    <p><strong>Estoc:</strong> {{ $producte->estoc }}</p>
+    <p><strong>Descompte:</strong> {{ $producte->descompte }}</p>
 </body>
 </html>

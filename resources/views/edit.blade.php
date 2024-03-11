@@ -22,7 +22,12 @@
         <input type="text" id="nom" name="nom" value="{{ old('nom', $producte->nom) }}"><br>
         <label for="preu">Preu:</label>
         <input type="text" id="preu" name="preu" value="{{ old('preu', $producte->preu) }}"><br>
-        <!-- Altres camps del formulari -->
+        <label for="descripcio">Descripcio:</label>
+        <input type="text" id="descripcio" name="descripcio" value="{{ old('descripcio', $producte->descripció) }}"><br>
+        <label for="estoc">Estoc:</label>
+        <input type="text" id="estoc" name="estoc" value="{{ old('estoc', $producte->estoc) }}"><br>
+        <label for="descompte">Descompte:</label>
+        <input type="text" id="descompte" name="descompte" value="{{ old('descompte', $producte->Descompte) }}"><br>
         <button type="submit">Desar Canvis</button>
     </form>
 </body>

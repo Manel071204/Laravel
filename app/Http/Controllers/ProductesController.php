@@ -24,14 +24,18 @@ class ProductesController extends Controller
         $validatedData = $request->validate([
             'nom' => 'required|string|max:50',
             'preu' => 'required|numeric',
-            // Altres camps que puguis tenir
+            'descripcio' => 'required|string',
+            'estoc' => 'required|numeric',
+            'descompte' => 'string',
         ]);
 
         // Crear un nou producte
         $producte = new Producte();
         $producte->nom = $request->nom;
         $producte->preu = $request->preu;
-        // Altres atributs del producte
+        $producte->descripció = $request->descripcio;
+        $producte->estoc = $request->estoc;
+        $producte->descompte = $request->descompte;
         $producte->save();
 
         return redirect()->route('productes.index')->with('success', 'Producte creat correctament!');
@@ -74,8 +78,11 @@ class ProductesController extends Controller
     {
         // Validación de los datos del formulario
         $validatedData = $request->validate([
-            'nom' => 'required|string|max:255',
+            'nom' => 'required|string|max:50',
             'preu' => 'required|numeric',
+            'descripcio' => 'required|string',
+            'estoc' => 'required|numeric',
+            'descompte' => 'string',
             // Otros campos que desees validar
         ]);
 
@@ -85,6 +92,10 @@ class ProductesController extends Controller
         // Actualizar los campos del producto con los datos del formulario
         $producte->nom = $validatedData['nom'];
         $producte->preu = $validatedData['preu'];
+        $producte->descripció = $validatedData['descripcio'];
+        $producte->estoc = $validatedData['estoc'];
+        $producte->descompte = $validatedData['descompte'];
+
         // Actualiza otros campos según sea necesario
 
         // Guardar los cambios en el producto

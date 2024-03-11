@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Producte Creat</title>
+    <link rel="stylesheet" href="{{ asset('app.css') }}" type="text/css">
 </head>
 <body>
     <h1>Producte Creat Correctament</h1>

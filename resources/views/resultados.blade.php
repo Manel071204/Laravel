@@ -11,7 +11,7 @@
     @else
         <ul>
             @foreach ($resultados as $producto)
-                <li>{{ $producto->nom }} - {{ $producto->descripció }} - {{ $producto->preu }} - {{ $producto->estoc }} - {{ $producto->descompte }}</li>
+                <li>{{ $producto->nom }} - {{ $producto->descripció }}</li>
             @endforeach
         </ul>
     @endif

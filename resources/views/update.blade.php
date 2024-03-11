@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualización Exitosa</title>
+    <link rel="stylesheet" href="{{ asset('app.css') }}" type="text/css">
 </head>
 <body>
     <h1>Actualización Exitosa</h1>

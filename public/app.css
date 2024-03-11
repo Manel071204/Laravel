@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 7%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #77c6fc;
+}
+
+.div-estoc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+.div-estoc form{
+    display: inline;
+}
+
+.button-estoc{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color:#f4f4f4;
+    border:solid 2px #77c6fc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #77c6fc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+label{
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #77c6fc;
+}
+
+.label-top{
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+button{
+    margin-top: 2%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color:#f4f4f4;
+    border:solid 2px #77c6fc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #77c6fc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+input:hover{
+    border: solid 2px #77c6fc;
+}
+
+input:focus{
+    outline: none;
+    border: solid 2px #77c6fc;
+}
+
+button:hover{
+    background-color: #77c6fc;
+    color: #f4f4f4;
+    cursor: pointer;
+}
